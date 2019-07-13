@@ -1,0 +1,16 @@
+<progressbar
+  [max]="limit"
+  [value]="bar > limit ? limit : bar"
+  [type]="bar >= limit ? 'danger' : 'warning'"
+  [striped]="true"
+  [animate]="selectedBar == index"
+  [title]="bar + '/' + limit"
+  (click)="viewState.selectBar(index)"
+  *ngIf="barView"
+>
+  <i>{{bar/limit | percent}}</i>
+</progressbar>
+
+<div class="progress-text" *ngIf="!barView" (click)="viewState.selectBar(index)">
+  Progress {{index + 1}} - {{bar}}/{{limit}} - {{bar/limit | percent}}
+</div>

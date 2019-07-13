@@ -1,0 +1,26 @@
+<div class="content-wrapper mt-5" *ngIf="viewState.bars">
+  <div class="progresses-wrapper">
+    <app-select-bar [bars]="viewState.bars"></app-select-bar>
+    <div
+      class="progress-wrapper mb-5"
+      *ngFor="let bar of viewState.bars.bars; let i = index"
+      [ngClass]="{'progress-selected': i == viewState.selectedBar}">
+      <app-progress
+        [bar]="bar"
+        [limit]="viewState.bars.limit"
+        [index]="i"
+        [selectedBar]="viewState.selectedBar"
+        [barView]="viewState.isBarView">
+      </app-progress>
+    </div>
+  </div>
+  <!-- <progressbar *ngFor="let bar of viewState.bars.bars">
+    {{bar}}
+  </progressbar> -->
+  <div class="buttons mb-5">
+    <button class="btn btn-info" (click)="viewState.alterValue(button)" *ngFor="let button of viewState.bars.buttons">{{button}}</button>
+  </div>
+  <div class="buttons">
+    <button class="btn btn-primary btn-block" (click)="viewState.toggleView()">Toggle Progress View</button>
+  </div>
+</div>

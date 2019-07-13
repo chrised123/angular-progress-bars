@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
-  // add your routes here
+  { path: 'bars', loadChildren: '../modules/bars/bars.module#BarsModule' },
+  { path: '', redirectTo: 'bars', pathMatch: 'prefix'},
 ];
 
 @NgModule({

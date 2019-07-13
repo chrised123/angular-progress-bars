@@ -1,0 +1,3 @@
+<select [(ngModel)]="viewState.selectedBar" class="form-control">
+  <option [value]="i" *ngFor="let barOption of bars.bars; let i = index" [selected]="i == viewState.selectedBar">Progress bar {{i + 1}}</option>
+</select>

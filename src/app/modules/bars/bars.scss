@@ -1,0 +1,60 @@
+.content-wrapper{
+  margin: auto;
+  text-align: center;
+  min-width: 240px;
+  max-width: 400px;
+
+
+  .progresses-wrapper{
+
+    select{
+      margin-bottom: 40px;
+    }
+  }
+
+  .progress-selected{
+
+    .progress{
+      height: 24px;
+      border: 1px solid $font-footer;
+    }
+
+    .progress-text{
+      font-weight: 700;
+    }
+  }
+
+  .progress-text{
+    cursor: pointer;
+  }
+
+  .progress{
+    cursor: pointer;
+
+    i{
+      position: absolute;
+      left: 0;
+      right: 0;
+      color: $font-text;
+    }
+
+    .progress-bar-danger i{
+      color: $font-light;
+    }
+  }
+
+  .buttons button{
+    min-width: 85px;
+    margin: 0 10px 10px;
+
+    @include customMediaUp(430px){
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
