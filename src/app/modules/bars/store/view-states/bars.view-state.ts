@@ -24,6 +24,8 @@ export class BarsViewState {
         if (this.fetchBarDataOperation.error) {
           console.log('error error error');
         } else if (this.fetchBarDataOperation.data) {
+          // Keep this.isLoading to true to see the loading bar. Currently it wont be visible because
+          // I am doing an ngif to check whether data is available.
           this.isLoading = false;
           this.bars = new Bars(this.fetchBarDataOperation.data);
         }
