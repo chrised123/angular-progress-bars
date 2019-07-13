@@ -9,6 +9,7 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { FormsModule } from '@angular/forms';
 import { ProgressComponent } from './components/progress/progress.component';
 import { SelectBarComponent } from './components/select-bar/select-bar.component';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [BarsComponent, ProgressComponent, SelectBarComponent],
@@ -16,7 +17,8 @@ import { SelectBarComponent } from './components/select-bar/select-bar.component
     BarsRoutingModule,
     CommonModule,
     ProgressbarModule.forRoot(),
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [
     BarsViewState,

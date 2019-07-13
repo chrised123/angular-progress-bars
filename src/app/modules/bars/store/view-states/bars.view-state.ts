@@ -8,6 +8,7 @@ export class BarsViewState {
   @observable bars: Bars;
   @observable selectedBar: number;
   isBarView: boolean;
+  isLoading = true;
   constructor(
     private fetchBarDataOperation: BarDataOperationStore,
   ) {
@@ -23,6 +24,7 @@ export class BarsViewState {
         if (this.fetchBarDataOperation.error) {
           console.log('error error error');
         } else if (this.fetchBarDataOperation.data) {
+          this.isLoading = false;
           this.bars = new Bars(this.fetchBarDataOperation.data);
         }
       }

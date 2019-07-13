@@ -3,3 +3,25 @@ body{
   background: #ffffff;
   margin: 0;
 }
+
+
+.loader-wrapper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($light-bg, 0.9);
+  z-index: 99;
+
+  .loader{
+    margin-top: 50%;
+    margin-left: 50%;
+
+    .progress{
+      margin-top: -8px;
+      margin-left: -50px;
+      width: 100px;
+    }
+  }
+}

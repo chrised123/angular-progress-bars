@@ -5,12 +5,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +24,7 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     NavComponent,
+    LoaderComponent
   ]
 })
 export class SharedModule {

@@ -1,4 +1,5 @@
 <div class="content-wrapper mt-5" *ngIf="viewState.bars">
+  <app-loader *ngIf="viewState.isLoading"></app-loader>
   <div class="progresses-wrapper">
     <app-select-bar [bars]="viewState.bars"></app-select-bar>
     <div
