@@ -1,0 +1,28 @@
+nav.navbar{
+  background: $header-bg;
+  box-shadow: 0px 2px 50px -10px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+.logo a{
+  color: $font-light;
+  
+  &:hover, &:focus{
+    color: darken($font-light, 10%);
+    text-decoration: none;
+  }
+}
+
+.nav-right{
+  margin-left: auto;
+
+  a{
+    color: $font-light;
+
+    &:hover, &:focus{
+      color: darken($font-light, 10%);
+    }
+  }
+}
+
+

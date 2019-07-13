@@ -1,0 +1,40 @@
+.fourOfour{
+  background-image: radial-gradient(at left top, $header-bg 0%, darken(#2A4CB5, 10%) 100% );
+  background-size: cover;
+  height: calc(100vh - 60px);
+  display: block;
+  background-repeat: no-repeat;
+  color: $font-light;
+  display: table;
+  width: 100%;
+}
+
+.fourOfour-content-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+  padding: rem(30);
+  position: relative;
+  top: -50px;
+
+  h1{
+    @include font-size(60);
+  }
+
+  .notfound-heading{
+    position: relative;
+    @include font-size(36);
+  }
+
+  .notfound-subheading{
+    @include font-size(16);
+    margin-bottom: rem(26);
+  }
+
+  .btn-bordered{
+    margin-top: rem(10);
+    color: $font-light;
+    background-color: transparent;
+    border: 1px solid $font-light;
+  }
+}
+

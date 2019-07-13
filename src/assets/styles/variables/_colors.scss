@@ -1,0 +1,27 @@
+$main-accent-1: #2A4CB5;
+$main-accent-2: #40376E;
+$secondary-accent-1: #48233C;
+$secondary-accent-2: #96ACB7;
+$contrast-accent-1: #D4E4BC;
+
+// font colors
+$font-heading: #21298A;
+$font-text: #4A4A4A;
+$font-chat: #FFFFFF;
+$font-button: #FFFFFF;
+$font-light: #FFFFFF;
+$font-link: $main-accent-2;
+$font-disabled: $secondary-accent-2;
+$font-footer: #757575;
+
+// background colors
+$light-bg: #FFFFFF;
+$header-bg: $main-accent-1;
+$form-bg-fill: #F0F0F0;
+$cta-button-bg: $main-accent-2;
+
+// border
+$chat-button-border: #21298A;
+
+// shadow
+$shadow: 0px 2px 50px -10px rgba(0, 0, 0, 0.1);

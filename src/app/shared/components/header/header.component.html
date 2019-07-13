@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <h3 class="logo">
+    <a href="/app">{{app.title}}</a>
+  </h3>
+  <ul class="nav nav-right">
+    <li *ngFor="let nav of navs?.items" class="nav-item">
+      <app-nav [item]="nav"></app-nav>
+    </li>
+  </ul>
+</nav>

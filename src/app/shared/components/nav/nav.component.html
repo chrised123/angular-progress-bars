@@ -1,0 +1,6 @@
+<a *ngIf="item" [routerLink]="item.link" [ngClass]="item.navClass">
+  <span [ngClass]="item.icon" *ngIf="item.icon"></span>
+  <img [ngClass]="item.class" [src]="item.img" *ngIf="item.img">
+  <span [innerHTML]="item.innerHTML" *ngIf="item.innerHTML"></span>
+  {{item.module}}
+</a>

@@ -1,0 +1,64 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin timeline($props){
+  -webkit-transform: #{$props};
+  transform: #{$props};
+}
+
+// This mixin was created thinking mobile first. So when writing your styles, write mobile styles first.
+
+@mixin widescreenUp {
+  @media only screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desktopUp {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tabletUp {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin customMediaUp($size) {
+  @media only screen and (min-width: #{$size}) {
+    @content;
+  }
+}
+
+
+// font related mixins
+$fontBase: 16;
+
+@mixin font-size($sizeValue) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / $fontBase) + rem;
+}
+
+@function rem($sizeValue, $context: $fontBase) {
+  @return #{$sizeValue/$fontBase}rem;
+}
