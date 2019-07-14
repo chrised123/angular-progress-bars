@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { autorun, observable, action, reaction } from 'mobx';
-import { Operations } from 'src/app/shared/commons/constants/global.constant';
+import { Operations } from '../../../../shared/commons/constants/global.constant';
 import { BarDataOperationStore } from '../operations/barData.operation-store';
 import { Bars } from '../view-models/bars.view-model';
 @Injectable()

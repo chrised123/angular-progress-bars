@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { OperationBaseStore } from 'src/app/core/store/operations/operation.base.store';
+import { OperationBaseStore } from '../../../../core/store/operations/operation.base.store';
 import { BarService } from '../services/barData.service';
 
 @Injectable()
