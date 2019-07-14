@@ -7,7 +7,7 @@ import { CoreDomainState } from './core/store/domain-states/core.domain-state';
 })
 export class AppComponent {
   constructor(
-    protected core: CoreDomainState
+    public core: CoreDomainState
   ) {
     core = new CoreDomainState();
   }
